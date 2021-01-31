@@ -51,6 +51,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Keyscan SSH
+        run: ssh-keyscan -H nat-25434.nuvem-brasil-10.absamcloud.com:43841 >> ~/.ssh/known_hosts
       - name: Push to dokku
         uses: dokku/github-action@master
         env:
