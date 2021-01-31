@@ -56,6 +56,7 @@ jobs:
         env:
           branch: main
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          git_remote_url: ${{ secrets.DOKKU_REMOTE_URL }}
+          dokku-host: nat-25434.nuvem-brasil-10.absamcloud.com:43841
+          app-name: mariaquiteria.gomex.me
 
     needs: [build]
