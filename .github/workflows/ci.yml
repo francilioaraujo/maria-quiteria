@@ -57,5 +57,6 @@ jobs:
           branch: main
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           git_remote_url: 'ssh://dokku@nat-25434.nuvem-brasil-10.absamcloud.com:43841/mariaquiteria.gomex.me'
+          ssh_host_key: '[nat-25434.nuvem-brasil-10.absamcloud.com]:43841 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDuPpc5tAyhH76OTURrwRtIkwRQytjP/coVutF5HDvE9NS3Gybwca8tW86gwQZg9jpPOAIOWtzQml3YwgfSgwT5Jxwt2NV0x09V/xSrP2+t/d+7CQWB2XXXrkkSaCG6J6cYWBMRz+dn7MTrqbNzQlQ01+2EYk4R4YSbZabv25EaGg6Mvu6yzhoP9baZDrHxp3zWzl55DxL8TpungfLsTvB22NcsdjZiGbAHDek8oNi5MGU5vGKOwVXLYnALL1vdg/KapKlzklMP0i9BAJUgMDuXHF8oNoWJ6ocyBUSvwscwancgLEX0SuWK98VXMpDNujFBZsjemllBMiCyQ37K0Dp/'
 
     needs: [build]
